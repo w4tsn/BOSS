@@ -65,9 +65,8 @@ public:
 
     GameState(const RaceID r = Races::None);
 
-// constructor based on BWAPI::Game only makes sense if using VS
 // we won't be using this if we're compiling to emscripten or linux
-#ifdef _MSC_VER
+#ifdef EMSCRIPTEN
     GameState(BWAPI::GameWrapper & game, BWAPI::PlayerInterface * player, const std::vector<BWAPI::UnitType> & buildingsQueued);
 #endif
 

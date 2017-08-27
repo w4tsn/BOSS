@@ -14,7 +14,7 @@ GameState::GameState(const RaceID r)
     
 }
 
-#ifdef _MSC_VER
+#ifndef EMSCRIPTEN
 GameState::GameState(BWAPI::GameWrapper & game, BWAPI::PlayerInterface * self, const std::vector<BWAPI::UnitType> & buildingsQueued)
     : _race                 (Races::GetRaceID(self->getRace()))
     , _currentFrame         (game->getFrameCount())
