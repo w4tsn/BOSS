@@ -19,11 +19,11 @@
     <ClCompile Include="..\source\BuildOrderTester.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\source\BOSSExperiments.h" />
-    <ClInclude Include="..\source\BOSSParameters.h" />
-    <ClInclude Include="..\source\BOSSPlotBuildOrders.h" />
-    <ClInclude Include="..\source\CombatSearchExperiment.h" />
-    <ClInclude Include="..\source\BuildOrderTester.h" />
+    <ClInclude Include="..\include\BOSSExperiments.h" />
+    <ClInclude Include="..\include\BOSSParameters.h" />
+    <ClInclude Include="..\include\BOSSPlotBuildOrders.h" />
+    <ClInclude Include="..\include\CombatSearchExperiment.h" />
+    <ClInclude Include="..\include\BuildOrderTester.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{25544976-2D9A-4669-8EF6-B622C3B5A42E}</ProjectGuid>
