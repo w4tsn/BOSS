@@ -66,7 +66,7 @@ public:
     GameState(const RaceID r = Races::None);
 
 // we won't be using this if we're compiling to emscripten or linux
-#ifdef EMSCRIPTEN
+#ifndef EMSCRIPTEN
     GameState(BWAPI::GameWrapper & game, BWAPI::PlayerInterface * player, const std::vector<BWAPI::UnitType> & buildingsQueued);
 #endif
 
