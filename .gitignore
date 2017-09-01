@@ -3,6 +3,8 @@ VisualStudio/Debug
 VisualStudio/ipch
 VisualStudio/*.txt
 VisualStudio/*.vsp
+VisualStudio/*.sdf
+VisualStudio/*.suo
 emscripten/*.js
 emscripten/*.mem
 emscripten/*.data
