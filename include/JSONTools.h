@@ -3,8 +3,8 @@
 #include "BOSS.h"
 #include "Common.h"
 #include "BuildOrder.h"
-#include "rapidjson/rapidjson.h"
-#include "rapidjson/document.h"
+#include "rapidjson.h"
+#include "document.h"
 
 namespace BOSS
 {
