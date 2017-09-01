@@ -5,6 +5,7 @@ VisualStudio/*.txt
 VisualStudio/*.vsp
 VisualStudio/*.sdf
 VisualStudio/*.suo
+VisualStudio/*.opensdf
 emscripten/*.js
 emscripten/*.mem
 emscripten/*.data
