@@ -13,9 +13,12 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -std=c++11")
 ADD_DEFINITIONS(/DNOMINMAX=1)
 
 SET(BWAPI_INCL_DIR /tmp/bwapi/include)
+SET(RAPIDJSON_INCL_DIR /tmp/rapidjson/include/rapidjson)
 
 INCLUDE_DIRECTORIES(
    ${BWAPI_INCL_DIR}
+   ${RAPIDJSON_INCL_DIR}
+   include/
 )
 
 SET(BOSS_DEPENDENCIES
@@ -58,6 +61,7 @@ SET(BOSS_INCLUDES
    include/BOSSLogger.h
    include/JSONTools.h
    include/NaiveBuildOrderSearch.h
+   include/Position.hpp
    include/PrerequisiteSet.h
    include/Timer.hpp
    include/Tools.h

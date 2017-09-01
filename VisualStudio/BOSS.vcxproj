@@ -46,6 +46,7 @@
     <ClInclude Include="..\include\BOSSLogger.h" />
     <ClInclude Include="..\include\JSONTools.h" />
     <ClInclude Include="..\include\NaiveBuildOrderSearch.h" />
+    <ClInclude Include="..\include\Position.hpp" />
     <ClInclude Include="..\include\PrerequisiteSet.h" />
     <ClInclude Include="..\include\Timer.hpp" />
     <ClInclude Include="..\include\Tools.h" />
