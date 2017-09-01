@@ -1,0 +1,13 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker build -t lionax/bossbuild .
+  - docker run --rm lionax/bossbuild >> bossbuild.sh
+  - chmod u+x bossbuild.sh
+
+script:
+  - ./bossbuild.sh --image lionax/bossbuild cmake -Bbuild -H.
+  - ./bossbuild.sh --image lionax/bossbuild make -Cbuild
