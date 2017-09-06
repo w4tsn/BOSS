@@ -12,7 +12,7 @@ RUN curl -L https://github.com/lionax/bwapi/releases/download/v4.1.2/BWAPI-4.1.2
       && rm /tmp/bwapi.zip \
       && mv $BWAPI_DIR/BWAPI/* $BWAPI_DIR \
       && rm -R $BWAPI_DIR/BWAPI \
-      && chmod 755 -R $BWAPI_DIR
+      && chmod 755 -R $BWAPI_DIR \
    && echo "export BWAPI_DIR=$BWAPI_DIR" >> /root/.bashrc
 
 ENV RAPIDJSON_DIR /tmp/rapidjson
